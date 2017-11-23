@@ -1,11 +1,29 @@
 {
-  "name": "express-gateway-plugin-example",
+  "name": "express-gateway-plugin-egm",
   "version": "1.0.1",
-  "description": "Plugin Example for Express Gateway",
-  "main": "manifest.js",
+  "description": "Plugin to integrate with EGM",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appsflare/express-gateway-plugin-egm.git"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "*.md",
+    "*.json",
+    "LICENSE"
+  ],
   "scripts": {
+    "prepack": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "Apache-2.0"
+  "author": "Srinath Janakiraman <me@vjsrinath.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express-gateway": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.39",
+    "@types/json-schema": "^4.0.0"
+  }
 }
